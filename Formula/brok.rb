@@ -1,7 +1,6 @@
 class Brok < Formula
   desc "Local-first developer workspace search and agents"
   homepage "https://brokspace.org"
-  version "0.4.1"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do

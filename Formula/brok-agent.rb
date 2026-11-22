@@ -1,7 +1,6 @@
 class BrokAgent < Formula
   desc "Default Brokspace agent and shard runtime"
   homepage "https://brokspace.org"
-  version "0.2.1"
   license any_of: ["MIT", "Apache-2.0"]
 
   on_macos do
