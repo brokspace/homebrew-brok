@@ -1,0 +1,41 @@
+name: tests
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  formulae:
+    name: ${{ matrix.os }}
+    runs-on: ${{ matrix.os }}
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, macos-latest]
+    steps:
+      - uses: Homebrew/actions/setup-homebrew@master
+      - uses: actions/checkout@v5
+      - name: Link this checkout as the tap
+        run: |
+          tap_dir="$(brew --repository brokspace/brok)"
+          mkdir -p "$(dirname "$tap_dir")"
+          ln -sfn "$GITHUB_WORKSPACE" "$tap_dir"
+      - name: Style
+        run: brew style brokspace/brok
+      - name: Audit
+        run: |
+          brew audit --strict --online brokspace/brok/brok
+          brew audit --strict --online brokspace/brok/brok-agent
+      - name: Install and test
+        run: |
+          brew install --formula brokspace/brok/brok brokspace/brok/brok-agent
+          brew test brokspace/brok/brok brokspace/brok/brok-agent
