@@ -5,25 +5,25 @@ class BrokAgent < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/brokspace/brok-agent/releases/download/v0.2.1/brok-agent-macos-aarch64", using: :nounzip
-      sha256 "cb9ae6434b2db0fead4ff6236b7ef4e07cd164fc689f9fa3ee4f054f86a3d9b0"
+      url "https://github.com/brokspace/brok-agent/releases/download/v0.3.0/brok-agent-macos-aarch64", using: :nounzip
+      sha256 "6f5f9196458321ce592bde4477b7a25c0698ee60976cb659546d66dbf44ed9dc"
     end
 
     on_intel do
-      url "https://github.com/brokspace/brok-agent/releases/download/v0.2.1/brok-agent-macos-x86_64", using: :nounzip
-      sha256 "74bac46e8dd9fcf33348035cd21d2c906d3054094202922f7624f74572e01e0e"
+      url "https://github.com/brokspace/brok-agent/releases/download/v0.3.0/brok-agent-macos-x86_64", using: :nounzip
+      sha256 "52e92fc511e09239416c27fedcf0f3f30a469c3cff888e28d779022ceafac787"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/brokspace/brok-agent/releases/download/v0.2.1/brok-agent-linux-aarch64", using: :nounzip
-      sha256 "5c6d4c1257ee90a381cabd43287d694f3bc57ed0bf86d17515a14f54ac946551"
+      url "https://github.com/brokspace/brok-agent/releases/download/v0.3.0/brok-agent-linux-aarch64", using: :nounzip
+      sha256 "e7f859cee931d217438127b68a6dc8f7d611770991b6987f0234d3ae6fa56ecf"
     end
 
     on_intel do
-      url "https://github.com/brokspace/brok-agent/releases/download/v0.2.1/brok-agent-linux-x86_64", using: :nounzip
-      sha256 "a5bc232b21060f0439d47f4d791fdf6c306ce14633c06f3070ada4d8327d0b74"
+      url "https://github.com/brokspace/brok-agent/releases/download/v0.3.0/brok-agent-linux-x86_64", using: :nounzip
+      sha256 "91925e987ab48e06057e4ec33e0ab4bc0d9bb9810e0f415dd0cb12ff9a533395"
     end
   end
 
