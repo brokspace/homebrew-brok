@@ -5,25 +5,25 @@ class Brok < Formula
 
   on_macos do
     on_arm do
-      url "https://github.com/brokspace/brok/releases/download/v0.4.1/brok-macos-aarch64", using: :nounzip
-      sha256 "85b5098bb7a501513da1e8f824f0ec19110be8ff0ba69392655c5bf7889f4ec8"
+      url "https://github.com/brokspace/brok/releases/download/v0.5.0/brok-macos-aarch64", using: :nounzip
+      sha256 "4436a99b00837a4b35f7b0fd9c5163713bccc526835abbcd647730f7d51caa67"
     end
 
     on_intel do
-      url "https://github.com/brokspace/brok/releases/download/v0.4.1/brok-macos-x86_64", using: :nounzip
-      sha256 "816cdea1863604364c996991ff123e4b2572d18eb83a6712619c3533bbd2a5b1"
+      url "https://github.com/brokspace/brok/releases/download/v0.5.0/brok-macos-x86_64", using: :nounzip
+      sha256 "f3a5784cfff71b9653a3ee5befaadd661992b87f0503bce09854ff22355ef20c"
     end
   end
 
   on_linux do
     on_arm do
-      url "https://github.com/brokspace/brok/releases/download/v0.4.1/brok-linux-aarch64", using: :nounzip
-      sha256 "38465814aebcc739e0ad66815dcf5f7b4900a99584a1ce78402335a59e6df297"
+      url "https://github.com/brokspace/brok/releases/download/v0.5.0/brok-linux-aarch64", using: :nounzip
+      sha256 "1056e76519092ba879268b3bc930fbe81f6b9cc1092df6342ba543c4d956bf68"
     end
 
     on_intel do
-      url "https://github.com/brokspace/brok/releases/download/v0.4.1/brok-linux-x86_64", using: :nounzip
-      sha256 "787dc6a9309985046c92a657c5f3d904ecb3561fe114c3e5975ddeb0a7d70559"
+      url "https://github.com/brokspace/brok/releases/download/v0.5.0/brok-linux-x86_64", using: :nounzip
+      sha256 "a073c8fac729b877aa9a85e1d9955fd025f56f1e735de65ee32c02780b4c70b5"
     end
   end
 
