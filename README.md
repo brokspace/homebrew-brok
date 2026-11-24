@@ -17,6 +17,10 @@ Supported: macOS (Apple Silicon and Intel) and Linux (ARM64 and x86_64). On Wind
 
 Never edit `Formula/` by hand. After both releases are published, a maintainer runs **Actions → Update Homebrew tap** in `brokspace/brok` with the two tags. It regenerates `Formula/brok.rb` and `Formula/brok-agent.rb` from the release checksums and opens a pull request here; CI runs `brew style`, `brew audit` and a real install, and the PR is merged after review.
 
+## Contributing
+
+See [CONTRIBUTING.md](CONTRIBUTING.md): what is generated, how to open a pull request and how generated formula PRs are reviewed. `main` is protected and changes go through a squash-merged PR.
+
 ## Licence
 
 `MIT OR Apache-2.0`, see `LICENSE-MIT` and `LICENSE-APACHE`. The Brokspace name and logo are covered by the [name and logo policy](https://github.com/brokspace/.github/blob/main/TRADEMARKS.md).
